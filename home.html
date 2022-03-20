@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>ArmTech</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header-container shadow">
+      <header>
+        <div class="header-top">
+          <div class="list catalog">
+            <button onclick="catalogDrop()" class="catalogbtn">
+              <i class="fas fa-bars"></i><p>Catalog</p> 
+            </button>
+            <div id="catalog" class="catalog-menu">
+              <div class="catalog-item">
+                <button class="submenubtn"><img src="images/Icons/Smartphone-icon.png"
+                  alt="Smartphone-icon" /> Smartphone and Tablets</button>
+                <div class="submenu-content">
+                  <a class="submenu-item" href="#">Smartphones</a>
+                  <a class="submenu-item" href="#">Tablets</a>
+                  <a class="submenu-item" href="#">Accessories</a>
+                  <a class="submenu-item" href="#">Headphones</a>
+                  <a class="submenu-item" href="#">Power Banks</a>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="submenubtn"><img src="images/Icons/LAptop-icon.png"
+                  alt="Laptop-icon" /> Laptops</button>
+                <div class="submenu-content">
+                  <a class="submenu-item" href="#">Laptops</a>
+                  <a class="submenu-item" href="#">Accessories</a>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="submenubtn"><img src="images/Icons/PC-icon.png"
+                  alt="PC-icon" /> Computer & parts</button>
+                <div class="submenu-content">
+                  <a class="submenu-item" href="#">Desktop PC</a>
+                  <a class="submenu-item" href="#">Monoblocks</a>
+                  <a class="submenu-item" href="#">Computer parts</a>
+                  <a class="submenu-item" href="#">Motherboards</a>
+                  <a class="submenu-item" href="#">Processors</a>
+                  <a class="submenu-item" href="#">Graphic Adapters</a>
+                  <a class="submenu-item" href="#">HDD & SSD</a>
+                  <a class="submenu-item" href="#">Desktop Memories</a>
+                  <a class="submenu-item" href="#">PC Case</a>
+                  <a class="submenu-item" href="#">Power Suplies</a>
+                  <a class="submenu-item" href="#">Accessories</a>
+                  <a class="submenu-item" href="#">Mouses</a>
+                  <a class="submenu-item" href="#">Keyboards</a>
+                  <a class="submenu-item" href="#">Monitors</a>
+                  <a class="submenu-item" href="#">Headsets</a>
+                  <a class="submenu-item" href="#">Web Cameras</a>
+                  <a class="submenu-item" href="#">Microphones</a>
+                  <a class="submenu-item" href="#">Prinetrs</a>
+                  <a class="submenu-item" href="#">Scanners</a>
+                  <a class="submenu-item" href="#">USB Flash Drivers</a>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="submenubtn"><img src="images/Icons/TV-icon.png"
+                  alt="TV-icon" /> TV & Audio</button>
+                <div class="submenu-content">
+                  <a class="submenu-item" href="#">Smart TV</a>
+                  <a class="submenu-item" href="#">Android TV</a>
+                  <a class="submenu-item" href="#">Projectors</a>
+                  <a class="submenu-item" href="#">Home Theaters</a>
+                  <a class="submenu-item" href="#">Audio Speakers</a>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="submenubtn"><img src="images/Icons/game-icon.png"
+                  alt="Video-Games-icon" /> Video Games</button>
+                <div class="submenu-content">
+                  <a class="submenu-item" href="#">Playstation</a>
+                  <a class="submenu-item" href="#">Xbox</a>
+                  <a class="submenu-item" href="#">Video games</a>
+                  <a class="submenu-item" href="#">Controllers</a>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="submenubtn"><img src="images/Icons/Accessories-icon.png"
+                  alt="Accessories-icon" /> Accessories</button>
+                <div class="submenu-content">                
+                  <a class="submenu-item" href="#">Headsets</a>
+                  <a class="submenu-item" href="#">HeadPhones</a>
+                  <a class="submenu-item" href="#">Power Banks</a>
+                  <a class="submenu-item" href="#">Adapters</a>
+                  <a class="submenu-item" href="#">SD memory card</a>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="submenubtn"><img src="images/Icons/camera-icon.png"
+                  alt="Camera-icon" /> Cameras</button>
+                <div class="submenu-content">
+                  <a class="submenu-item" href="#">Digital Cameras</a>
+                  <a class="submenu-item" href="#">Lenses </a>
+                  <a class="submenu-item" href="#">Tripods</a>
+                  <a class="submenu-item" href="#">SD memory card</a>
+                  <a class="submenu-item" href="#">Power Banks</a>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="submenubtn"><img src="images/Icons/appliances-icon.png"
+                  alt="appliances-icon" /> Home Appliances</button>
+                <div class="submenu-content">
+                  <a class="submenu-item" href="#">Home Appliances</a>
+                  <a class="submenu-item" href="#">Washing Machines</a>
+                  <a class="submenu-item" href="#">Dustbusters</a>
+                  <a class="submenu-item" href="#">Irons</a>
+                  <a class="submenu-item" href="#">Kitchen Appliances</a>
+                  <a class="submenu-item" href="#">Fridges</a>
+                  <a class="submenu-item" href="#">Dishwashers</a>
+                  <a class="submenu-item" href="#">Ovens</a>
+                  <a class="submenu-item" href="#">Small Kitchen Appliances</a>
+                  <a class="submenu-item" href="#">Teapods</a>
+                  <a class="submenu-item" href="#">Blenders</a>
+                  <a class="submenu-item" href="#">Coffee Makers</a>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <button class="submenubtn"><img src="images/Icons/personal-care-icon.png"
+                  alt="Personal-care-icon" /> Personal Care & Health</button>
+                <div class="submenu-content">
+                  <a class="submenu-item" href="#">Hair Styling Tools</a>
+                  <a class="submenu-item" href="#">Hair Dryer</a>
+                  <a class="submenu-item" href="#">Hair Brush</a>
+                  <a class="submenu-item" href="#">Hair Iron</a>
+                  <a class="submenu-item" href="#">Self Care Tools</a>
+                  <a class="submenu-item" href="#">Trimmers</a>
+                  <a class="submenu-item" href="#">Electric Shaver</a>
+                  <a class="submenu-item" href="#">Electric Toothbrush</a>
+                  <a class="submenu-item" href="#">Health</a>
+                  <a class="submenu-item" href="#">Blood Pleasure</a>
+                  <a class="submenu-item" href="#">Monitor</a>
+                  <a class="submenu-item" href="#">Thermometers</a>
+                  <a class="submenu-item" href="#">Scales</a>
+                  <a class="submenu-item" href="#">Massager</a>
+                </div>
+              </div>
+            </div>
+        </div>         
+          <div class="list logo-block">
+            <a href="home.html">
+              <div class="logo-text">
+                <p class="logo">ARM<span>TECH</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="list search-container">
+            <input action="home.html" type="text" name="search" placeholder="Search..." class="search-input"
+              autocomplete="off" />
+            <a href="#" class="search-btn">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="list profile-container">
+            <a href="login.html">
+              <i class="far fa-user"></i>
+            </a>
+            <p>Profile</p>
+          </div>
+          <div class="list profile-container">
+            <a href="#">
+              <i class="far fas fa-shopping-cart"></i>
+            </a>
+            <p>Cart</p>
+          </div>
+          <div class="list profile-container">
+            <a href="#">
+              <i class="far fa-heart"></i>
+            </a>
+            <p>Favourites</p>
+          </div>
+          <div class="list profile-container">
+            <a href="#">
+              <i class="far fas fa-balance-scale-right"></i>
+            </a>
+            <p>Compare</p>
+          </div>          
+        </div>
+        <div class="slider">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="swp-img" src="images/Slider/apple-watch-slider.jpg"
+                  alt="Apple-watch-slider"></div>
+              <div class="swiper-slide"><img class="swp-img" src="images/Slider/Beats-pro-slider.jpg"
+                  alt="Beats-pro-slider"></div>
+              <div class="swiper-slide"><img class="swp-img" src="images/Slider/iphone-13-slider.jpg"
+                  alt="iphone-13-slider"></div>
+              <div class="swiper-slide"><img class="swp-img" src="images/Slider/macbook-slider.png"
+                  alt="macbook-slider"></div>
+            </div>
+            <button id="swiper-button-next" class="swiper-button swiper-button-next"><img src="" alt=""></button>
+            <button id="swiper-button-prev" class="swiper-button swiper-button-prev"><img src="" alt=""></button>
+            <div id="swiper-pagination" class="swiper-pagination"></div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="shadow slider">
+    </div>
+    <div class="main">
+      <div class="info-box">
+        <h1>Epic Deals</h1>
+      </div>
+      <div class="myProduct-carousel swiper mySwiper2">
+        <div class="product-carousel-wrapper swiper-wrapper">
+          <div class="product-carousel swiper-slide">
+            <div class="box">
+              <div class="slide-img">
+                <img src="images/Products/Smartphone & Tablet/galaxy-a51.png" alt="iPhone13" />
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="" class="product-name">A51 </a>
+                  <span>Samsung</span>
+                </div>
+                <div class="price-box">
+                  <a class="discount"><del>$299</del></a>
+                  <a class="price">$279</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-carousel swiper-slide">
+            <div class="box">
+              <div class="slide-img">
+                <img src="images/Products/Smartphone & Tablet/iphone-13-product-red.png" alt="iPhone13" />
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="" class="product-name">iPhone 13 </a>
+                  <span>Apple</span>
+                </div>
+                <div class="price-box">
+                  <a class="discount"><del>$929</del></a>
+                  <a class="price">$879</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-carousel swiper-slide">
+            <div class="box">
+              <div class="slide-img">
+                <img src="/images/Products/Laptop/Microsoft-surface-go.png" alt="Microsoft-Surface-Go" />
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="" class="product-name">Surface Go 12.4 Intel Core i5 10th Gen 8GB RAM 512GB SSD </a>
+                  <span>Microsoft</span>
+                </div>
+                <div class="price-box">
+                  <a class="discount"><del>$549</del></a>
+                  <a class="price">$479</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-carousel swiper-slide">
+            <div class="box">
+              <div class="slide-img">
+                <img src="/images/Products/PC/Logitech-pro-x.png" alt="Logtech Pro X" />
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="" class="product-name"> Pro X </a>
+                  <span>Logitech</span>
+                </div>
+                <div class="price-box">
+                  <a class="discount"><del>$99</del></a>
+                  <a class="price">$79</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-carousel swiper-slide">
+            <div class="box">
+              <div class="slide-img">
+                <img src="/images/Products/Smartphone & Tablet/xiaomi-11t-pro-white.png" alt="Xiaomi-11T" />
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="" class="product-name"> 11T </a>
+                  <span>Xiaomi</span>
+                </div>
+                <div class="price-box">
+                  <a class="discount"><del>$749</del></a>
+                  <a class="price">$699</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-carousel swiper-slide">
+            <div class="box">
+              <div class="slide-img">
+                <img src="/images/Products/Smartphone & Tablet/Apple-iPad-Pro-12,9-inch-5th-gen-Space-Gray.png"
+                  alt="Ipad-pro-12.9-5" />
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="detail-box">  
+                <div class="type">
+                  <a href="" class="product-name"> iPad Pro 12.9 5th Gen </a>
+                  <span>Apple</span>
+                </div>
+                <div class="price-box">
+                  <a class="discount"><del>$1099</del></a>
+                  <a class="price">$949</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-carousel swiper-slide">
+            <div class="box">
+              <div class="slide-img">
+                <img src="/images/Products/Laptop/Asus_ROG_Zephyrus_M16.png" alt="ASus-Rog-Zephyrus-M16" />
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="" class="product-name"> Zephyrus M16 144HZ Intel Core i7 NVIDIA GeForce RTX 3050Ti
+                    512GB SSD 16GB RAM </a>
+                  <span>Asus Rog</span>
+                </div>
+                <div class="price-box">
+                  <a class="discount"><del>$1399</del></a>
+                  <a class="price">$1249</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-carousel swiper-slide">
+            <div class="box">
+              <div class="slide-img">
+                <img src="./images/Products/PC/Gigabyte M27Q.png" alt="Gigabyte M27Q" />
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="" class="product-name">M27Q 27.0" 2560 x 1440 170 Hz IPS 16:9</a>
+                  <span>Gigabyte</span>
+                </div>
+                <div class="price-box">
+                  <a class="discount"><del>$299</del></a>
+                  <a class="price">$249</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-carousel swiper-slide">
+            <div class="box">
+              <div class="slide-img">
+                <img src="./images/Products/Smartphone & Tablet/OnePlus-9-Pro-green.png" alt="Oneplus-9-Pro" />
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="" class="product-name">OnePlus 9 Pro</a>
+                  <span>OnePlus</span>
+                </div>
+                <div class="price-box">
+                  <a class="discount"><del>$749</del></a>
+                  <a class="price">$699</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-swiper-button  product-swiper-button-next  swiper-button-next"></div>
+        <div class="product-swiper-button  product-swiper-button-prev  swiper-button-prev"></div>
+        <div class="product-pagination swiper-pagination"></div>
+      </div>
+      <div class="cat-block-container">
+        <div class="cat-block">
+          <img src="./images/Group_178_.png" alt="" />
+        </div>
+        <div class="cat-block">
+          <img src="./images/Group_181.png" alt="" />
+        </div>
+        <div class="cat-block">
+          <img src="./images/Group_176_.png" alt="" />
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h1>Best Sellers</h1>
+      </div>
+    <div class="myProduct-carousel swiper mySwiper2">
+      <div class="product-carousel-wrapper swiper-wrapper">
+          <div class="product-carousel swiper-slide">
+            <div class="box">
+              <div class="slide-img">
+                <img src="./images/Products/PC/amd-ryzen-7-5800x.png" alt="Ryzen-7-5800x" />
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="" class="product-name"> Ryzen 7 5800X 8 Cores 16 Threads 3.8 GHz - 4.7 GHz 105W</a>
+                  <span>AMD</span>
+                </div>                
+                  <a class="price">$299</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-carousel swiper-slide">
+            <div class="box">
+              <div class="slide-img">
+                <img src="images/Products/PC/Skytech-mini-gaming-pc.png" alt="SKyTech-mini-gaming-pc" />
+                <div class="overlay">
+                  <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+              </div>
+              <div class="detail-box">
+                <div class="type">
+                  <a href="" class="product-name">AMD Ryzen 3 3100 NVIDIA GeForce GTX 1660 16GB RAM 500GB SSD</a>
+                  <span>Skytech</span>
+                </div>                
+                  <a class="price">$1299</a>
+              </div>
+            </div>
+          </div>
+          <div class="product-carousel-wrapper swiper-wrapper">
+            <div class="product-carousel swiper-slide">
+              <div class="box">
+                <div class="slide-img">
+                  <img src="images/Products/Smartphone & Tablet/ipad-air-4th-gen.png" alt="Ipad-air-4" />
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <a href="" class="product-name"> iPad Air 4th Gen</a>
+                    <span>iPad Air 4th Gen</span>
+                  </div>                
+                    <a class="price">$879</a>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="product-carousel swiper-slide">
+              <div class="box">
+                <div class="slide-img">
+                  <img src="images/Products/PC/apple-airpods-max.png" alt="Airpods-Max" />
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <a href="" class="product-name"> Airpods Max</a>
+                    <span>Apple</span>
+                  </div>                
+                    <a class="price">$499</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-carousel swiper-slide">
+              <div class="box">
+                <div class="slide-img">
+                  <img src="images/Products/PC/CLX-set.png" alt="CLX i9 10850k" />
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <a href="" class="product-name">Intel Core i9 10850K 32GB 3000MHz RAM GeForce RTX 3060 Ti
+                      960GB SSD 4TB HDD</a>
+                    <span>CLX</span>
+                  </div>                
+                    <a class="price">$2749</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-carousel swiper-slide">
+              <div class="box">
+                <div class="slide-img">
+                  <img src="images/Products/Smartphone & Tablet/iPhone-11.png" alt="iPhone-11"/>
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <a href="" class="product-name">iPhone 11</a>
+                    <span>Apple</span>
+                  </div>                
+                    <a class="price">$749</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-carousel swiper-slide">
+              <div class="box">
+                <div class="slide-img">
+                  <img src="images/Products/PC/SteelSeries-Apex-Pro-TKL_square_2.png" alt="Apex-Pro"/>
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <a href="" class="product-name">Apex Pro TKL RGB</a>
+                    <span>SteelSeries</span>
+                  </div>                
+                    <a class="price">$179</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-carousel swiper-slide">
+              <div class="box">
+                <div class="slide-img">
+                  <img src="images/Products/PC/HP-jet-black.png" alt="HP-jet-black"/>
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <a href="" class="product-name">AMD Ryzen 3 8GB 256GB SSD</a>
+                    <span>HP</span>
+                  </div>                
+                    <a class="price">$499</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-carousel swiper-slide">
+              <div class="box">
+                <div class="slide-img">
+                  <img src="images/Products/Smartphone & Tablet/Redmi_9A.png" alt="Xiaomi-redmi-9a"/>
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <a href="" class="product-name">Redmi 9a</a>
+                    <span>Xiaomi</span>
+                  </div>                
+                    <a class="price">$139</a>
+                </div>
+              </div>
+            </div>
+            <div class="product-carousel swiper-slide">
+              <div class="box">
+                <div class="slide-img">
+                  <img src="images/Products/Smartphone & Tablet/Redmi_9A.png" alt="Xiaomi-redmi-9a"/>
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <a href="" class="product-name">Redmi 9a</a>
+                    <span>Xiaomi</span>
+                  </div>                
+                    <a class="price">$139</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-swiper-button product-swiper-button-next  swiper-button-next"></div>
+          <div class="product-swiper-button product-swiper-button-prev  swiper-button-prev"></div>
+          <div class="product-pagination swiper-pagination"></div>
+      </div>
+      <div class="info-box">
+        <h1>Shop by Category</h1>
+      </div>
+      <div class="shop-category-container">
+        <div class="shop-category-box">
+          <div class="shop-category-img-box">
+            <a href="SmartphoneTablet.html">
+              <img src="./images/Products//Category/Smartphones-Category.jpg" alt="Smartphones" />
+            </a>
+          </div>
+          <a href="Smartphones.html">Smartphones</a>
+        </div>
+        <div class="shop-category-box">
+          <div class="shop-category-img-box">
+            <a href="Tablets.html">
+              <img src="./images//Products/Category/tablets-category.jpg" alt="Tablets" />
+            </a>
+          </div>
+          <a href="Tablets.html">Tablets</a>
+        </div>
+        <div class="shop-category-box">
+          <div class="shop-category-img-box">
+            <a href="Laptops.html">
+              <img src="./images/Products/Category/laptops.jpg" alt="Laptops" />
+            </a>
+          </div>
+          <a href="Laptops.html">Laptops</a>
+        </div>
+        <div class="shop-category-box">
+          <div class="shop-category-img-box">
+            <a href="ComputerAndParts.html">
+              <img src="./images/Products/Category/Pc-Category.jpg" alt="Pc & Pc parts>" />
+            </a>
+          </div>
+          <a href="ComputerAndParts.html">Computers & Parts</a>
+        </div>
+        <div class="shop-category-box">
+          <div class="shop-category-img-box">
+            <a href="#">
+              <img src="./images/Products/Category/gaming-accesory-category.jpg" alt="Gaming Accessory" />
+            </a>
+          </div>
+          <a href="">Computer Accessories</a>
+        </div>
+        <div class="shop-category-box">
+          <div class="shop-category-img-box">
+            <a href="#">
+              <img src="./images/Products/Category/Video Games.jpg" alt="Video Games" />
+            </a>
+          </div>
+          <a href="">Video Games</a>
+        </div>
+
+        <div class="shop-category-box">
+          <div class="shop-category-img-box">
+            <a href="SmartphoneAccessory.html">
+              <img src="./images/Products/Category/Accessories-Category.jpg" alt="Accessories" />
+            </a>
+          </div>
+          <a href="SmartphoneAccessory.html">Accessories</a>
+        </div>
+
+        <div class="shop-category-box">
+          <div class="shop-category-img-box">
+            <a href="#">
+              <img src="./images/Products/Category/Cameras-Category.jpg" alt="Cameras" />
+            </a>
+          </div>
+          <a href="">Cameras</a>
+        </div>
+        <div class="shop-category-box">
+          <div class="shop-category-img-box">
+            <a href="#">
+              <img src="./images/Products/Category/Tv-Category.jpg" alt="Tv Audio" />
+            </a>
+          </div>
+          <a href="">Tv & Audio</a>
+        </div>
+        <div class="shop-category-box">
+          <div class="shop-category-img-box">
+            <a href="#">
+              <img src="./images/Products/Category/home-appliances-category.jpg" alt="Home Appliances" />
+            </a>
+          </div>
+          <a href="">Home Appliances</a>
+        </div>
+        <div class="shop-category-box">
+          <div class="shop-category-img-box">
+            <a href="#">
+              <img src="./images/Products/Category/personal_cre_category2.png" alt="Personal-Care-Health" />
+            </a>
+          </div>
+          <a href="">Personal Care and Health</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-top">
+      <div class="footer-top-container">
+        <div class="footer-top-box">
+          <i class="fas fa-phone-alt"></i>
+          <p>Contact Us</p>
+        </div>
+        <div class="footer-top-box">
+          <i class="far fa-question-circle"></i>
+          <p>About Us</p>
+        </div>
+        <div class="footer-top-box">
+          <i class="fas fa-truck"></i>
+          <p>Delivery</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-mid">
+      <div class="footer-social">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-logo-block">
+        <p class="copyright">
+          <i class="copyright far fa-copyright"></i> ArmTech, all rights reserved
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      speed: 1200,
+      spaceBetween: 20,
+      centeredSlides: true,
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var swiper1 = new Swiper(".myProduct-carousel", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      breakpoints: {
+        // when window width is >= 320px
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        876: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        // when window width is >= 640px
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 20
+        }
+      },
+      pagination: {
+        el: ".product-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".product-swiper-button-next",
+        prevEl: ".product-swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
